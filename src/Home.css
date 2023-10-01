@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+.menu-items {
+  font-size: 15px;
+  /* width: 100px; */
+  text-transform: uppercase;
+}
+
+.menu-items:hover {
+  cursor: pointer;
+  font-size: 16px;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  transition: 2ms;
+}
+
+.menu-items .active {
+  cursor: pointer;
+  font-size: 20px;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  transition: 2ms;
+}
+
+.menu-items .active img {
+  filter: drop-shadow(
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa
+  );
+  transition: 2ms;
+}
+
+/*Hover underline menu*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #f8ede3;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 5px;
+  bottom: 0;
+  left: 0;
+  background-color: #f8ede3;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.App {
+  /* width: 200vh; */
+  /* height: 50vh; */
+  display: flex;
+  margin-top: 70px;
+  text-align: center;
+  flex-direction: column;
+  width: 100%;
+  /* flex-direction: row; */
+  /* margin-top: 50px; */
+}
+.cat {
+  /* width: 100px; */
+  /* height: 100px; */
+  animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.cat img {
+  /* position: absolute; */
+  /* position: relative; */
+  /* bottom: 0; */
+}
+.cat img:hover {
+  filter: drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+}
+
+.popup {
+  /* visibility: hidden; */
+  /* margin-right: -10px; */
+  /* margin-top: 50px; */
+  display: flex;
+  visibility: hidden;
+  animation: 1s ease-out 2s infinite visibile;
+  flex-direction: column;
+  margin-bottom: 130px;
+  margin-right: -105px;
+}
+
+@keyframes visibile {
+  0% {
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+.hi {
+  font-size: 60px;
+  color: white;
+}
+.firstbox:hover span {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.25s ease-in-out 0s;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+
+.firstbox:hover {
+  cursor: pointer;
+}
+.secondbox:hover {
+  cursor: pointer;
+}
+.secondbox:hover span {
+  opacity: 0.3;
+  -webkit-transition: opacity 0.25s ease-in-out 0s;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+.firstbox {
+  transition: margin-left 0s ease;
+  -webkit-animation-name: slideInFromLeft;
+  animation-name: slideInFromLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+
+  /* animation: 1s ease-out 0s 1 slideInFromLeft; */
+}
+.secondbox {
+  transition: margin-right 0s ease;
+  -webkit-animation-name: slideInFromRight;
+  animation-name: slideInFromRight;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  /* animation: 1s ease-out 0s 1 slideInFromRight; */
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.spider {
+  transition: margin-top 2s ease;
+  -webkit-animation-name: slideInFromTop;
+  animation-name: slideInFromTop;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  /* animation: 1s ease-out 0s slideInFromBottom; */
+  overflow: hidden;
+  position: absolute;
+
+  margin-top: -200px;
+  right: 0;
+}
+.show {
+  margin-top: 0;
+  z-index: -100;
+  /* animation: 1s ease-out 0s 1 slideInFromBottom;
+  overflow: hidden; */
+}
+
+@keyframes slideInFromBottom {
+  50% {
+    margin-top: 0;
+  }
+  100% {
+    margin-top: -200px;
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  6% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  8% {
+    transform: translateY(-10px);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  42% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  55% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.talk-bubble {
+  /* margin-right: 10px; */
+  /* margin-top: 10px; */
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  /* height: auto; */
+  /* bottom: 0; */
+  /* min-height: 90px;   */
+  background-color: black;
+  border: 1px solid grey;
+  border-radius: 20px;
+  /* overflow-y: scroll; */
+  /* box-shadow: 5px 10px; */
+}
+
+.round {
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+}
+.tri-right.border.btm-right-in:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 30px;
+  bottom: -28px;
+  border: 15px solid;
+  border-color: grey grey transparent transparent;
+}
+.tri-right.btm-right-in:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: auto;
+  right: 34px;
+  bottom: -20px;
+  border: 12px solid;
+  border-color: black black transparent transparent;
+}
+
+.talktext {
+  padding: 1em;
+  text-align: center;
+  color: white;
+  height: 200px;
+  line-height: 1.5em;
+  overflow-y: auto;
+  /* display: flex; */
+  /* justify-content: center; */
+
+  flex-direction: column;
+}
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.talktext::-webkit-scrollbar-button {
+  visibility: hidden;
+}
+/*contact - page ---------------------*/
+.icon-contact {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #f8ede3; */
+  cursor: pointer;
+  color: #888;
+}
+
+.icon-contact:hover {
+  /* cursor: pointer; */
+  color: #fff;
+}
+
+.github svg {
+  color: "red";
+}
+
+/* projects file css */
+.experiencewrap {
+  @media (width >500px) {
+    display: flex;
+    flex-direction: row;
+  }
+  @media (width<=500px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+body::-webkit-scrollbar-track {
+  width: 30px;
+  background-color: #0fa;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  border: 3px solid orange;
+}
