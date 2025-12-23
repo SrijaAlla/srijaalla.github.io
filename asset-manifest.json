@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.699e5900.css",
-    "main.js": "/static/js/main.dce3b07f.js",
+    "main.js": "/static/js/main.5e92d69d.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/image9.JPG": "/static/media/image9.f39a2cbf01d8cf249f7c.JPG",
     "static/media/image3.JPG": "/static/media/image3.665dfe9b7f4460cc815b.JPG",
@@ -49,6 +49,7 @@
     "static/media/image17.jpg": "/static/media/image17.aae590b3e14cf3d0dd0d.jpg",
     "static/media/image29.jpeg": "/static/media/image29.0c52740301bfc3e1298b.jpeg",
     "static/media/9.jpg": "/static/media/9.30292844e7fe92fb1bba.jpg",
+    "static/media/LEELA_SRIJA_ALLA_RESUME.pdf": "/static/media/LEELA_SRIJA_ALLA_RESUME.aad23b186ea43a7a6aa4.pdf",
     "static/media/arduino.jpg": "/static/media/arduino.268de75cac6008ee5cf0.jpg",
     "static/media/nobgfrog.png": "/static/media/nobgfrog.8c9b715bdad4c017242f.png",
     "static/media/7.jpg": "/static/media/7.11bb5d2a63a5f7964692.jpg",
@@ -59,7 +60,6 @@
     "static/media/Modelarchitecture.png": "/static/media/Modelarchitecture.4fb6a8f4b33b4fe30a19.png",
     "static/media/image24.jpeg": "/static/media/image24.7eed15106c52352915b6.jpeg",
     "static/media/18.jpg": "/static/media/18.2c5b04ec02ce6c62c5c2.jpg",
-    "static/media/LEELA_SRIJA_ALLA_RESUME.pdf": "/static/media/LEELA_SRIJA_ALLA_RESUME.ac65c05e1158df151bf3.pdf",
     "static/media/image23.jpeg": "/static/media/image23.1291c3cbf9d035f27a57.jpeg",
     "static/media/image20.jpg": "/static/media/image20.c7911abe091fbeddb61b.jpg",
     "static/media/architecture.png": "/static/media/architecture.37169149cd5b3763b2f8.png",
@@ -97,11 +97,11 @@
     "index.html": "/index.html",
     "static/media/c.svg": "/static/media/c.c86ab343915e382feeddbee294b35c0a.svg",
     "main.699e5900.css.map": "/static/css/main.699e5900.css.map",
-    "main.dce3b07f.js.map": "/static/js/main.dce3b07f.js.map",
+    "main.5e92d69d.js.map": "/static/js/main.5e92d69d.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.699e5900.css",
-    "static/js/main.dce3b07f.js"
+    "static/js/main.5e92d69d.js"
   ]
 }
